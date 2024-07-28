@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTO\CarrinhoDTO.cs" />
+    <Compile Remove="DTO\CartaoDTO.cs" />
+    <Compile Remove="DTO\DadoBancarioDTO.cs" />
+    <Compile Remove="DTO\EnderecoDTO.cs" />
+    <Compile Remove="DTO\IncluirProdutoCarrinhoDTO.cs" />
+    <Compile Remove="DTO\ItemDTO.cs" />
+    <Compile Remove="DTO\LoginDTO.cs" />
+    <Compile Remove="DTO\PagamentoDTO.cs" />
+    <Compile Remove="DTO\PedidoDTO.cs" />
+    <Compile Remove="DTO\ProdutoDTO.cs" />
+    <Compile Remove="Services\ClienteService.cs" />
+    <Compile Remove="Services\Interfaces\IClienteService.cs" />
+    <Compile Remove="Services\Interfaces\IPedidoService.cs" />
+    <Compile Remove="Services\Interfaces\IProdutoService.cs" />
+    <Compile Remove="Services\Interfaces\IVendedorService.cs" />
+    <Compile Remove="Services\PedidoService.cs" />
+    <Compile Remove="Services\ProdutoService.cs" />
+    <Compile Remove="Services\VendedorService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lojinha.Domain\Lojinha.Domain.csproj" />
+    <ProjectReference Include="..\Lojinha.Repository\Lojinha.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
