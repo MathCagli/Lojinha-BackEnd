@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Lojinha.Application.DTO;
+﻿using Lojinha.Application.DTO;
 using Lojinha.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -29,15 +28,14 @@ namespace Lojinha.Api.Controllers
         public async Task<ActionResult<CadastroDTO>> Login(LoginDTO login)
         {
             CadastroDTO usuario = await _authService.Login(login);
-            return usuario;
+            return Ok(usuario);
         }
 
         [HttpPost("cadastrarUsuario")]
-        [AllowAnonymous]
         public async Task<ActionResult<CadastroDTO>> CadastrarUsuario(CadastroDTO novoUsuario)
         {
             CadastroDTO usuario = await _authService.CadastrarUsuario(novoUsuario);
-            return usuario;
+            return Ok(usuario);
         }
 
         // Esqueci Senha

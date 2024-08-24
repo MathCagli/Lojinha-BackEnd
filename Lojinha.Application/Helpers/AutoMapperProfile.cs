@@ -11,6 +11,9 @@ namespace Lojinha.Application.Helpers
             // Usuário
             CreateMap<Usuario, UsuarioDTO>().ReverseMap();
             CreateMap<Usuario, CadastroDTO>().ReverseMap();
+
+            // Log
+            CreateMap<Log, LogDTO>().ReverseMap();
         }
     }
 }

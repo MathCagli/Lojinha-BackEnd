@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 
 namespace Lojinha.Repository.Repository
 {
+    // Adicionar abstract
     public class Repository<T> : IRepository<T> where T : Entity
     {
         protected DbContext Context { get; set; }

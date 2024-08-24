@@ -8,6 +8,7 @@ namespace Lojinha.Application.DTO
         public string Email { get; set; }
         public string Login { get; set; }
         public string SenhaTxt { get; set; }
+        public string Token { get; set; }
 
     }
 
